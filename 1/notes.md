@@ -104,7 +104,7 @@ func,interfaces,slices,maps,pointers - nil
 string - ""
 ```
 
-## Substitution
+## Substitution verbs
 ```
 %v - value
 %T - type
@@ -114,7 +114,7 @@ string - ""
 %#v - additional value with name 
 ```
 
-> + show value and variable
+> + show value and variable while # shows full details
 ## Value vs pointer
 Passing by value vs passing by reference
 Pass by value not efficient , Go use **stack** Pointer uses **heap**
