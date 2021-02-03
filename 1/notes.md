@@ -56,7 +56,7 @@ var seed int64 = 1234456789
 name:="Joshua"
 ```
 
-- Declaring Multiple Variables from a Function
+- Declaring Multiple Variables from a Function (Returning multiple variable in the function)
 
 ```
 func fullname () (string,string){
@@ -100,7 +100,7 @@ func fullname () (string,string){
 ```
 bool - false
 number - 0
-func - nil
+func,interfaces,slices,maps,pointers - nil
 string - ""
 ```
 
@@ -110,10 +110,11 @@ string - ""
 %T - type
 %s - string
 %d - number
-%+v - additional values 
+%+v - only values 
 %#v - additional value with name 
 ```
 
+> + show value and variable
 ## Value vs pointer
 Passing by value vs passing by reference
 Pass by value not efficient , Go use **stack** Pointer uses **heap**
@@ -127,12 +128,18 @@ var <name> *<type>
 - using var
 - using new keyword
 - using existing variable
-- using the  
+- using the  other data -type like struct
 
 > While getting the value from the pointer prefix the variable with *
 
 and pass panna 
 
+## Getting a Value from a Pointer
+
+Using the  dereference operator
+```
+fmt.Println(*<val>)
+```
 ## Constant
 
 using const keyword

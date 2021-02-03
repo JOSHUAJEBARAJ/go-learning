@@ -9,7 +9,7 @@ const (
 	c
 )
 
-//  to start with 1 use a=itoa+1
+//  to start with 1 use a=iota+1
 func main()  {
 fmt.Println(a,c)	
 }
