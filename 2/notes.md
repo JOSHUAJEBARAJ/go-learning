@@ -122,3 +122,4 @@ for <key>, <value> := range <map> {
 
 Arrays and slices - for loop
 maps - for range 
+We can also use for range for array and slice

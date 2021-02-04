@@ -164,3 +164,7 @@ constant (
 Using itoa
 https://yourbasic.org/golang/iota/
 ### Scopes
+
+### Random things
+
+strings.Repeat() - repeat the string
