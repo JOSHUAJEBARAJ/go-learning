@@ -117,7 +117,7 @@ for <key>, <value> := range <map> {
 }
 ```
 
-> we can use _ to ignore key or value
+> we can use _ to ignore key or value also called **blank-indetifier**
 
 
 Arrays and slices - for loop
