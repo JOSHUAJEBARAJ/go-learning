@@ -21,8 +21,9 @@ Same length and size will can be compared
 
 ## Initializing Arrays Using Keys
 
+Storing the value at particular index
 ```
- arr2 := [...]int{9: 0}
+ arr2 := [...]int{9: 0} // storing the value at the particular index
 ```
 ## Reading from an Array
 
@@ -45,3 +46,4 @@ While passing use the same format
 ```
 arr [10] int
 ```
+> If we loop over in the for range it will create the loop
