@@ -123,7 +123,52 @@ delete(map,id)
 <type>(<value>)
 int8(value)
 ```
+## Simple Custom Types
 
+```
+type name <type>
+```
+
+## Struct
+
+```
+type <name> struct {
+
+  <fieldName1> <type>
+
+  <fieldName2> <type>
+
+  …
+
+  <fieldNameN> <type>
+
+}
+```
+
+### Creating Struct 
+- with key and value
+- with value only
+- using var
+-  using anonmoyous function (there are 2 types one is intiliazing with value the other type is intializing with zero and changing the value latter )
+
+```
+var1 :=  struct {
+
+  <fieldName1> <type>
+
+  <fieldName2> <type>
+
+  …
+
+  <fieldNameN> <type>
+
+}{
+    value 
+}
+
+
+
+> use semicolon and comma at end of the each value
 ## Type assertion
 
 - fmt take interface has the input
@@ -133,6 +178,14 @@ int8(value)
 <value>.(<type>)
 <value>, <ok> := <value>.(type)
 ```
+
+## Struct Composition Using Embedding
+
+Embedding one type of struct into another
+
+We can use 4 method refer 4.19
+
+when intializing the embedding type you have to use the full notation
 
 ## Type Switch
 
