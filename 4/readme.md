@@ -118,16 +118,7 @@ m = make(map[string]int)
 delete(map,id)
 ```
 
-## Type Conversions
 
-- Smaller to larger no Issue
-- Larger to smaller will cause issue like overflow
-- Usigned int to signed int also cause overflow
-
-```
-<type>(<value>)
-int8(value)
-```
 ## Simple Custom Types
 
 ```
@@ -150,7 +141,8 @@ type <name> struct {
 }
 ```
 
-### Creating Struct 
+## Creating Struct 
+
 - with key and value
 - with value only
 - using var
@@ -170,7 +162,7 @@ var1 :=  struct {
 }{
     value 
 }
-
+```
 
 
 > use semicolon and comma at end of the each value
@@ -192,6 +184,26 @@ We can use 4 method refer 4.19
 
 when intializing the embedding type you have to use the full notation
 
+## Type Conversions
+
+- Smaller to larger no Issue
+- Larger to smaller will cause issue like overflow
+- Usigned int to signed int also cause overflow
+
+```
+<type>(<value>)
+int8(value)
+```
+## Type Conversions
+
+- Smaller to larger no Issue
+- Larger to smaller will cause issue like overflow
+- Usigned int to signed int also cause overflow
+
+```
+<type>(<value>)
+int8(value)
+```
 ## Type Switch
 
 ```
