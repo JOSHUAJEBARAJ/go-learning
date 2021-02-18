@@ -97,8 +97,13 @@ make(<sliceType>, <length>, <capacity>).
 ```
 map[<key_type>]<value_type>
 ```
+- we can also use make to create the map 
+  
+>  Go returns the zero value if the key is not present
 
-> , Go returns the zero value for the map's value type. 
+```
+m = make(map[string]int)
+```
 
 
 ### Reading from Map
