@@ -153,7 +153,123 @@ v3:=vector{}
 * --> dereference operator
 
 > In struct we don't have to use the dereference operator
+
+## Data Structure
+
+### Array
+
+- have fixed length
+```
+[n] T
+```
+
+```
+var a[10]string
+```
+### Slice
+
+- Slice pointer to an array
+- has length and capacity
+- zero value is **nil**
+
+We can use **make** function
+
+```
+a:=make([]int,0)
+```
+
+we can use range
+
+```
+s[low:high]
+```
+
+> high =high-1
+
+### Append
+
+Append will create the new array and store it in the variable
+> to append the slice(no element) to existing slice use ...
+
+
+### for range
+
+we can either ignore key or value
+
+*To ignore key*
+```
+for _,key:= range slice{
+
+}
+```
+
+*To ignore value*
+
+>We dont have to use the _
+```
+for i:=range slice{
+
+}
+```
+
+### Maps
+
+Maps are like an key value pair
+
+We can use make to create the map
+
+```
+m=make(map[int]string)
+```
+
+#### Assigning the value
+
+```
+m[key]=vale
+```
+
+#### Deleting the value
+
+```
+delete(variable,key)
+```
+#### Getting value
+There are 2 types
+- elem=m[key]
+- elem,ok=m[key]
+
+# OOPS
+
+## Methods
+Go doesn't have class
+```
+func (v vertex) name() return type{}
+
+```
+
+### Methods vs Function
+```
+v := Vertex{1, 3}
+a := v.Abs()
+
+v := Vertex{1, 3}
+a := Abs(v)
+
+```
+
+> remember to use the * next to the type what annie said
+
+We can use methods only in the same package
+
+```
+func (f float64) IsPositive() bool {
+	return f >= 0
+}
+
+```
+The above wont work since float belong to another package
 # Glossary
+
 ```
 1. Hello -world
 2. Import
@@ -166,4 +282,9 @@ v3:=vector{}
 11. type example
 12. struct
 13. Pointer to struct
+14. Array
+15. Slice
+16. for range
+17. Map
+19. Methods
 ```
