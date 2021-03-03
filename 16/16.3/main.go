@@ -1,23 +1,13 @@
 package main
-
 import "fmt"
-import "sync"
-func sum(a int ,s *sync.WaitGroup) int {
-	s.Done()
-	total:=0
-	for i:=1 ; i<=a ;i++{
-		total=i+total
-	}
-	return total
+func hello(c chan int){
+fmt.Println("Hello")
+c<-10
 }
 func main(){
-	var s int 
-	w:=&sync.WaitGroup{}
-	w.Add(1)
-	go func(){
-		s=sum(100,w)
-	}()
-w.Wait()
-	fmt.Println(s)
-
+	
+	c:=make(chan int)
+	go hello(c)
+	<-c  // it will wait until reads operation is done the further code will not be executed
+	fmt.Println("Main")
 }

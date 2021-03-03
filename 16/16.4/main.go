@@ -1,15 +1,16 @@
 package main
 
-import(
-	"log"
-)
-func greet(c chan string ){
-	c <-"hello"
-
+import "fmt"
+import "time"
+func sendonly(c chan<- int){
+	fmt.Println("Iam called")
+c<-10
 }
 
 func main(){
-	m:=make(chan string)
-	go greet (m)
-	log.Println(<-m)
+	a:=make(chan<- int)
+	go sendonly(a)
+	b:=make(chan int)
+	go sendonly(b)
+	time.Sleep(10*time.Second)
 }
