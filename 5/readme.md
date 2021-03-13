@@ -10,7 +10,7 @@ Syntax
 
 ## Difference between argument and the parameter
 
-When we define function is called argument when we use it called parameter
+When we define function is called parameter when we use it called argument
 
 ## Naked Returns
 
